@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c5fe4dbc.css",
+    "main.js": "/static/js/main.03b9f220.js",
+    "static/media/viajes-valencia.jpg": "/static/media/viajes-valencia.6df627837f27864869f2.jpg",
+    "static/media/viajes-zaragoza.jpg": "/static/media/viajes-zaragoza.e7955270c2acfb984682.jpg",
+    "static/media/viajes-salamanca.jpg": "/static/media/viajes-salamanca.2c14f5ea74ded5184e0b.jpg",
+    "static/media/viajes-oporto.jpg": "/static/media/viajes-oporto.8066929492413ab2a9aa.jpg",
+    "static/media/viajes-trujillo.jpg": "/static/media/viajes-trujillo.5c70165c5fed22120f80.jpg",
+    "static/media/flores.png": "/static/media/flores.482ff6e7b93612f85b21.png",
+    "index.html": "/index.html",
+    "main.c5fe4dbc.css.map": "/static/css/main.c5fe4dbc.css.map",
+    "main.03b9f220.js.map": "/static/js/main.03b9f220.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c5fe4dbc.css",
+    "static/js/main.03b9f220.js"
+  ]
+}
