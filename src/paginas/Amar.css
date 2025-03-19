@@ -1,0 +1,37 @@
+.amar {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 20px; /* Espaciado entre elementos */
+	padding-top: 75px;
+	font-family: 'Winter', sans-serif;
+}
+
+.calculadora {
+	width: 400px;
+	height: auto;
+	padding: 14px;
+	background-color: #1b1b32;
+	border-radius: 20px;
+	border: 5px solid white;
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.fila {
+	margin: 2px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+@media (max-width: 768px) {
+	.amar {
+		gap: 10px;
+	}
+
+	.calculadora {
+		width: 100%;  
+		padding: 8px;
+	}
+}

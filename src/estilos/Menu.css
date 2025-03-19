@@ -1,0 +1,81 @@
+.menu-desplegable {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; /*Ocupa todo el ancho de la pantalla*/
+  height: 60px;
+  background-color: rgba(255, 255, 255, 0.60);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transform: translateX(-100%); /*Fuera de la pantalla inicialmente*/
+  transition: transform 0.6s ease-in-out; /*Transición suave*/
+  z-index: 100; 
+  display: flex; 
+  align-items: center;
+}
+
+.menu-desplegable.menu-visible {
+  transform: translateX(0); /*Menú visible, desplazado completamente a su lugar*/
+}
+
+@media (max-width: 768px) {
+  .menu-desplegable {
+    height: 50px;
+  }
+}
+
+.menu-listado {
+  display: flex; 
+  width: 100%; 
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.boton-flecha {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #1b1b32;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  font-size: 18px;
+}
+
+.boton-flecha:hover {
+  background-color: rgba(27, 27, 50, 0.1);
+  transform: scale(1.1);
+}
+
+.boton-flecha.izquierda {
+  margin-left: 10px;
+}
+
+.boton-flecha.derecha {
+  margin-right: 10px;
+}
+
+.boton-flecha svg {
+  font-size: 20px;
+  color: #1b1b32;
+}
+
+.boton-flecha.disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 768px) {
+  .boton-flecha {
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+  }
+
+  .boton-flecha svg {
+    font-size: 16px;
+  }
+}

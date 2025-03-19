@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  font-size: 16px; /*Tamaño base para pantallas móviles*/
+}
+
+@media (min-width: 768px) {
+  html, body {
+    font-size: 18px; /*Aumenta la base en pantallas grandes*/
+  }
+}
+
+h1 {
+  max-width: 940px;
+  font-size: 2em;
+  font-family: 'Romantic', sans-serif;                                   
+  font-weight: 700;
+  line-height: 1.1;
+  text-align: center;
+  margin: 20px 10px;
+}

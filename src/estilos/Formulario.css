@@ -1,0 +1,63 @@
+.plan-formulario {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.plan-input {
+  width: 65%;
+  height: 48px;
+  font-size: 18px;
+  background-color: white;
+  padding: 0 32px 0 16px;
+  border-radius: 4px 0 0 4px;
+  border: 2px solid #00471b;
+  outline: none;
+  box-sizing: border-box;
+  font-family: 'Quicksand', serif;
+}
+
+.plan-input::placeholder {
+  font-family: 'Quicksand', serif;
+}
+
+.plan-boton {
+  width: auto;
+  height: 48px;
+  padding: 0 20px;
+  font-size: 18px;
+  font-family: 'Quicksand', serif;
+  border: 2px solid #00471b;
+  border-left: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  outline: none;
+  background: #00471b;
+  color: white;
+  text-transform: capitalize;
+  box-sizing: border-box;
+  text-align: center;
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+
+  .plan-formulario {
+    margin-bottom: 20px;
+  }
+
+  .plan-input {
+    font-size: 12px;
+    height: 35px;
+    padding-left: 10px;
+  }
+
+  .plan-boton {
+    font-size: 12px;
+    height: 35px;
+    width: 25%;
+    padding: 0px;
+  }
+}

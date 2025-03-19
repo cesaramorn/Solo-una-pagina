@@ -1,0 +1,7 @@
+# Ignorar la carpeta build
+/build/
+
+# Ignorar dependencias de Node.js
+/node_modules/
+
+/.env  # Si tienes archivos de configuración privada

@@ -1,0 +1,15 @@
+.querer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px; /* Espaciado entre elementos */
+  padding-top: 75px;
+  font-family: 'Winter', sans-serif;
+}
+
+@media (max-width: 768px) { /* Para pantallas más pequeñas */
+  .querer {
+    gap: 5px;
+  }
+}

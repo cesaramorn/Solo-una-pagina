@@ -1,0 +1,29 @@
+.indice {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.menu-texto {
+  cursor: pointer;
+  transition: text-decoration 0.3s ease;
+  z-index: 1;
+  font-size: 1.8em;
+  text-align: center;
+  margin: 20px 0;
+}
+
+@media (min-width: 768px) {
+  .menu-texto {
+    font-size: 2.5em; /*Tamaño en pantallas grandes*/
+  }
+}
+
+.menu-texto:hover {
+  text-decoration: underline; /*Subraya el texto al pasar el ratón*/
+}
+  

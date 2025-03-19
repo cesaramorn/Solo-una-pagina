@@ -1,0 +1,130 @@
+.carta {
+  width: 90%;
+  max-width: 600px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  perspective: 1000px; /* Para efecto 3D */
+}
+
+.carta:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Parte frontal de la carta (plegada) */
+.carta-frontal {
+  padding: 16px 0;
+  background: #f7f9fc;
+  border-bottom: 2px solid #ccc;
+  text-align: center;
+  position: relative;
+}
+
+/* Línea simulando un pliegue */
+.carta-frontal::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #ddd;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+/* Contenido desplegable */
+.carta-contenido {
+  padding: 16px;
+  font-family: 'Quicksand', serif;
+  background: #fff;
+  border-top: 1px solid #e0e0e0;
+  overflow: hidden;
+  word-wrap: break-word;
+  height: 0;
+  opacity: 0;
+  transform: rotateX(-90deg);
+  transform-origin: top;
+  transition: height 0.5s ease, opacity 0.5s ease, transform 0.5s ease;
+  white-space: pre-line;
+  text-align: justify;
+}
+
+/* Cuando la carta está expandida */
+.carta.expandida .carta-contenido {
+  height: auto;
+  opacity: 1;
+  transform: rotateX(0);
+}
+
+.carta h3 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  color: #1b1b32;
+}
+
+.carta p {
+  font-size: 1em;
+  margin-top: 8px;
+  color: #5a5a5a;
+  line-height: 1.5;
+}
+
+/* Botón de cerrar */
+.carta button.icono-cerrar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  margin: 16px auto;
+  border: none;
+  border-radius: 50%;
+  background-color: #00471b;
+  color: #ffffff;
+  font-size: 1.5em;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.carta button.icono-cerrar:hover {
+  background-color: #ff6600;
+  transform: scale(1.1);
+}
+
+.autor-cesar {
+  background-color: #fdfd96; /* Amarillo pastel */
+}
+
+.autor-monica {
+  background-color: #d8b2d8; /* Lila pastel */
+}
+
+.carta-fecha {
+  margin: 10px 0;
+  display: block;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .carta {
+    width: 95%;
+  }
+
+  .carta h3 {
+    font-size: 1.3em; 
+  }
+
+  .carta p {
+    font-size: 0.9em;
+  }
+
+  .carta button.icono-cerrar {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2em;
+  }
+}

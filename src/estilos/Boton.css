@@ -1,0 +1,47 @@
+.boton-clic {
+  width: 250px;
+  height: 80px;
+  font-family: 'Winter', sans-serif;
+  font-size: 35px;
+  color: white;
+  border: 2px solid white;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease; /* Transición suave */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  background-color: #003366;
+}
+
+.boton-clic:hover {
+  background-color: #00471b;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.boton-reiniciar {
+  width: 250px;
+  height: 80px;
+  font-family: 'Winter', sans-serif;
+  font-size: 35px;
+  color: white;
+  border: 2px solid white;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease; /* Transición suave */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  background-color: #FF6F61;
+}
+
+.boton-reiniciar:hover {
+  background-color: #00471b;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 768px) { /* Ajustes para botones */
+  .boton-clic,
+  .boton-reiniciar {
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    margin: 3px;
+  }
+}

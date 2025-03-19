@@ -1,0 +1,32 @@
+.item {
+  flex-grow: 1;
+  text-align: center;
+  border-right: 1px solid black;
+  padding: 10px 0;
+}
+
+@media (max-width: 768px) {
+  .item {
+    font-size: 0.9rem;
+  }
+}
+
+.item.ultimo-item {
+  border-right: none; /*Quita la línea del último elemento*/
+}
+
+.item:last-child {
+  border-right: none; /*Quita la línea del último elemento*/
+}
+
+.item a {
+  color: black;
+  text-decoration: none; /*Quita el subrayado por defecto*/
+  font-family: 'Quicksand', serif;
+  font-weight: 400;
+  transition: color 0.3s ease;
+}
+
+.item a:hover {
+  color: #ff6600;
+}

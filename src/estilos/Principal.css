@@ -1,0 +1,10 @@
+.principal {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 50px;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1;
+}
