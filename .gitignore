@@ -1,7 +1,12 @@
-# Ignorar la carpeta build
-/build/
-
-# Ignorar dependencias de Node.js
+# Node modules
 /node_modules/
 
-/.env  # Si tienes archivos de configuración privada
+# Build output
+/build/
+
+# Archivos de entorno
+.env
+
+# Sistema operativo
+.DS_Store
+Thumbs.db

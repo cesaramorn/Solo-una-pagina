@@ -2,18 +2,29 @@ import React, { useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import '../estilos/Indice.css';
 import Menu from '../componentes/Menu';
+import { useAuth } from '../AuthContext';
 
-function Indice() {
-
+function Indice({ contenidoExtra = null }) {
   const location = useLocation();
   const [menuVisible, setMenuVisible] = useState(false);
+  const { user } = useAuth();
 
   const abrirMenu = () => {
-    setMenuVisible(!menuVisible);  // Alterna entre mostrar/ocultar el menú
+    setMenuVisible(!menuVisible);
   };
 
-  // Verifica si estamos en la página principal
-  const esPrincipal = location.pathname === '/';
+  const esPrincipal = location.pathname === '/' || location.pathname === '/login';
+
+  const elementos = user
+    ? [
+        { text: 'Inicio', link: '' },
+        { text: 'Calculadora', link: 'amar' },
+        { text: 'Cartas', link: 'cartas' },
+        { text: 'Contador', link: 'querer' },
+        { text: 'Planes', link: 'plan' },
+        { text: 'Viajes', link: 'viaje' },
+      ]
+    : [{ text: 'Iniciar Sesión', link: 'login' }];
 
   return (
     <div className='indice'>
@@ -23,19 +34,11 @@ function Indice() {
         </h1>
       )}
 
-      {esPrincipal && 
-      <Menu 
-        esVisible={menuVisible} 
-        elementos={[
-          { text: 'Inicio', link: '' },
-          { text: 'Calculadora', link: 'amar' },
-          { text: 'Cartas', link: 'cartas' },
-          { text: 'Contador', link: 'querer' },
-          { text: 'Planes', link: 'plan' },
-          { text: 'Viajes', link: 'viaje' }
-        ]}
-      />
-      }
+      {esPrincipal && (
+        <Menu esVisible={menuVisible} elementos={elementos} />
+      )}
+
+      {contenidoExtra}
 
     </div>
   );

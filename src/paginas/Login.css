@@ -1,0 +1,96 @@
+/* Contenedor horizontal del formulario */
+.fila-login {
+    margin-top: 60px;
+    background-color: rgba(255, 255, 255, 0.75);
+    border: 2px solid #1b1b32;
+    border-radius: 4px;
+    padding: 0;
+    width: 500px; /* Puedes ajustar este valor si lo deseas */
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    z-index: 1;
+    margin-left: auto;
+    margin-right: auto;
+    animation: aparecer 0.6s ease forwards;
+    font-family: 'Quicksand', serif;
+  }
+  
+/* Inputs (estilo plano sin borde) */
+.fila-login input {
+    height: 48px;
+    font-size: 18px;
+    background-color: white;
+    border: none;
+    padding: 0 16px;
+    outline: none;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: 'Quicksand', serif;
+    margin-bottom: 10px;
+}
+
+/* Placeholder */
+.fila-login input::placeholder {
+    font-family: 'Quicksand', serif;
+}
+
+/* Botón */
+.fila-login button {
+    height: 48px;
+    font-size: 18px;
+    font-family: 'Quicksand', serif;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    background: #1b1b32;
+    color: white;
+    font-weight: bold;
+    text-transform: capitalize;
+    white-space: nowrap;
+    transition: background-color 0.3s ease;
+    box-sizing: border-box;
+    text-align: center;
+    width: 100%;
+}
+
+/* Hover botón */
+.fila-login button:hover {
+    background-color: #ff6600;
+}
+
+/* Mensaje de error */
+.fila-login .error {
+    height: 48px;
+    font-size: 16px;
+    color: darkred;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0 16px;
+    box-sizing: border-box;
+    background-color: rgba(255, 0, 0, 0.05);
+    border-radius: 4px;
+}
+  
+/* Adaptación responsive */
+@media (max-width: 768px) {
+    .fila-login {
+        width: 90%;
+    }
+
+    .fila-login input {
+        font-size: 14px;
+        height: 40px;
+        padding-left: 10px;
+    }
+
+    .fila-login button {
+        font-size: 14px;
+        height: 40px;
+    }
+}
