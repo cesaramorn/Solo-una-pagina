@@ -21,6 +21,7 @@ function Indice({ contenidoExtra = null }) {
         { text: 'Calculadora', link: 'amar' },
         { text: 'Cartas', link: 'cartas' },
         { text: 'Contador', link: 'querer' },
+        { text: 'Diccionario', link: 'diccionario' },
         { text: 'Planes', link: 'plan' },
         { text: 'Viajes', link: 'viaje' },
       ]

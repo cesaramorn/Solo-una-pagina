@@ -1,6 +1,6 @@
 .carta {
   width: 90%;
-  max-width: 600px;
+  max-width: 800px;
   background: #ffffff;
   border-radius: 12px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -96,11 +96,11 @@
 }
 
 .autor-cesar {
-  background-color: #fdfd96; /* Amarillo pastel */
+  background-color: #f4b400; /* Amarillo pastel */
 }
 
 .autor-monica {
-  background-color: #d8b2d8; /* Lila pastel */
+  background-color: #a760d3; /* Lila pastel */
 }
 
 .carta-fecha {

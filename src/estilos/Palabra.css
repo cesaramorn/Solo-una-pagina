@@ -1,0 +1,50 @@
+.palabra {
+  width: 90%;
+  max-width: 1000px;
+  margin: 16px auto;
+  padding: 20px;
+  border-radius: 12px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.palabra:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.palabra h3 {
+  font-size: 1.6em;
+  margin-bottom: 12px;
+  color: #1b1b32; /* color por defecto */
+}
+
+.palabra p {
+  font-size: 1em;
+  line-height: 1.6;
+  color: #5a5a5a;
+  white-space: pre-line;
+}
+
+/* Colores del título por autor */
+.palabra.autor-cesar h3 {
+  color: #f4b400;
+}
+
+.palabra.autor-monica h3 {
+  color: #a760d3;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .palabra h3 {
+    font-size: 1.3em;
+  }
+
+  .palabra p {
+    font-size: 0.95em;
+  }
+}

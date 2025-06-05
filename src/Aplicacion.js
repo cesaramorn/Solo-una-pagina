@@ -9,6 +9,7 @@ import Amar from './paginas/Amar';
 import Plan from './paginas/Plan';
 import Cartas from './paginas/Cartas';
 import Login from './paginas/Login';
+import Diccionario from './paginas/Diccionario';
 import Principal from './diseño/Principal';
 
 
@@ -38,6 +39,7 @@ function Aplicacion() {
               <Route path='/querer' element={<Querer />} />
               <Route path='/amar' element={<Amar />} />
               <Route path='/plan' element={<Plan />} />
+              <Route path='/diccionario' element={<Diccionario />} />
               <Route path='/cartas' element={<Cartas />} />
             </Route>
             
